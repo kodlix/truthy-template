@@ -39,7 +39,7 @@ async function bootstrap() {
       customSiteTitle: apiConfig.description
     };
     const document = SwaggerModule.createDocument(app, swaggerConfig);
-    SwaggerModule.setup('api-docs', app, document, customOptions);
+    SwaggerModule.setup('docs', app, document, customOptions);
   } else {
     const whitelist = [apiConfig.get<string>('frontendUrl')];
     app.enableCors({

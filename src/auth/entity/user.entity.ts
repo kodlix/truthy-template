@@ -44,11 +44,14 @@ export class UserEntity extends CustomBaseEntity {
   @Column()
   name: string;
 
-  @Column()
+  @Column({ nullable: true })
   address: string;
 
   @Column()
   contact: string;
+
+  @Column()
+  contacts: string;
 
   @Column()
   avatar: string;

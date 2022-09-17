@@ -29,7 +29,6 @@ export class PermissionEntity extends CustomBaseEntity {
   @Column()
   isDefault: boolean;
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   @ManyToMany((type) => RoleEntity, (role) => role.permission)
   role: RoleEntity[];
 
